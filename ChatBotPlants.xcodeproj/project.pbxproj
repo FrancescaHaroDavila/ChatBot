@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8DABC39B221AF8CD00939521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC39A221AF8CD00939521 /* AppDelegate.swift */; };
-		8DABC39D221AF8CD00939521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC39C221AF8CD00939521 /* ViewController.swift */; };
 		8DABC3A0221AF8CD00939521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DABC39E221AF8CD00939521 /* Main.storyboard */; };
 		8DABC3A2221AF8CE00939521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DABC3A1221AF8CE00939521 /* Assets.xcassets */; };
 		8DABC3A5221AF8CE00939521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DABC3A3221AF8CE00939521 /* LaunchScreen.storyboard */; };
+		8DABC3AD221AFBBF00939521 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC3AC221AFBBF00939521 /* ChatViewController.swift */; };
+		8DABC3B1221B05A300939521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC3B0221B05A300939521 /* ViewController.swift */; };
+		8DABC3B7221B363800939521 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC3B6221B363800939521 /* ChatManager.swift */; };
+		C9C818C0C518CA41E2569BD0 /* Pods_ChatBotPlants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94EBCCA6EEDF3A8BA908392 /* Pods_ChatBotPlants.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08EC3B51255A5BFF8D8B5F39 /* Pods-ChatBotPlants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBotPlants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBotPlants/Pods-ChatBotPlants.debug.xcconfig"; sourceTree = "<group>"; };
 		8DABC397221AF8CD00939521 /* ChatBotPlants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotPlants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DABC39A221AF8CD00939521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DABC39C221AF8CD00939521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DABC39F221AF8CD00939521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DABC3A1221AF8CE00939521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DABC3A4221AF8CE00939521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DABC3A6221AF8CE00939521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DABC3AC221AFBBF00939521 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8DABC3B0221B05A300939521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DABC3B6221B363800939521 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		AC63CC2A59048532A5F2E814 /* Pods-ChatBotPlants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBotPlants.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBotPlants/Pods-ChatBotPlants.release.xcconfig"; sourceTree = "<group>"; };
+		B94EBCCA6EEDF3A8BA908392 /* Pods_ChatBotPlants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBotPlants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C818C0C518CA41E2569BD0 /* Pods_ChatBotPlants.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				8DABC399221AF8CD00939521 /* ChatBotPlants */,
 				8DABC398221AF8CD00939521 /* Products */,
+				B8543BA0981CB96ABEE87F82 /* Pods */,
+				EBAF555861DAF575431E76F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,65 @@
 		8DABC399221AF8CD00939521 /* ChatBotPlants */ = {
 			isa = PBXGroup;
 			children = (
-				8DABC39A221AF8CD00939521 /* AppDelegate.swift */,
-				8DABC39C221AF8CD00939521 /* ViewController.swift */,
-				8DABC39E221AF8CD00939521 /* Main.storyboard */,
-				8DABC3A1221AF8CE00939521 /* Assets.xcassets */,
-				8DABC3A3221AF8CE00939521 /* LaunchScreen.storyboard */,
+				8DABC3B4221B062700939521 /* Manager */,
+				8DABC3B3221B060800939521 /* ViewControllers */,
+				8DABC3B2221B05FA00939521 /* Storyboards */,
+				8DABC3B5221B063700939521 /* Utilities */,
 				8DABC3A6221AF8CE00939521 /* Info.plist */,
 			);
 			path = ChatBotPlants;
+			sourceTree = "<group>";
+		};
+		8DABC3B2221B05FA00939521 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8DABC3A3221AF8CE00939521 /* LaunchScreen.storyboard */,
+				8DABC39E221AF8CD00939521 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8DABC3B3221B060800939521 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DABC3AC221AFBBF00939521 /* ChatViewController.swift */,
+				8DABC3B0221B05A300939521 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8DABC3B4221B062700939521 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8DABC3B6221B363800939521 /* ChatManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8DABC3B5221B063700939521 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8DABC3A1221AF8CE00939521 /* Assets.xcassets */,
+				8DABC39A221AF8CD00939521 /* AppDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B8543BA0981CB96ABEE87F82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08EC3B51255A5BFF8D8B5F39 /* Pods-ChatBotPlants.debug.xcconfig */,
+				AC63CC2A59048532A5F2E814 /* Pods-ChatBotPlants.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBAF555861DAF575431E76F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B94EBCCA6EEDF3A8BA908392 /* Pods_ChatBotPlants.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DABC3A9221AF8CE00939521 /* Build configuration list for PBXNativeTarget "ChatBotPlants" */;
 			buildPhases = (
+				6BCACD825CE358BF5B788791 /* [CP] Check Pods Manifest.lock */,
 				8DABC393221AF8CD00939521 /* Sources */,
 				8DABC394221AF8CD00939521 /* Frameworks */,
 				8DABC395221AF8CD00939521 /* Resources */,
+				06554B451EA2E2A93B7D9F76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +194,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06554B451EA2E2A93B7D9F76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatBotPlants/Pods-ChatBotPlants-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatBotPlants/Pods-ChatBotPlants-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BCACD825CE358BF5B788791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatBotPlants-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DABC393221AF8CD00939521 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DABC39D221AF8CD00939521 /* ViewController.swift in Sources */,
+				8DABC3AD221AFBBF00939521 /* ChatViewController.swift in Sources */,
+				8DABC3B1221B05A300939521 /* ViewController.swift in Sources */,
 				8DABC39B221AF8CD00939521 /* AppDelegate.swift in Sources */,
+				8DABC3B7221B363800939521 /* ChatManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +399,12 @@
 		};
 		8DABC3AA221AF8CE00939521 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08EC3B51255A5BFF8D8B5F39 /* Pods-ChatBotPlants.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChatBotPlants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +418,12 @@
 		};
 		8DABC3AB221AF8CE00939521 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC63CC2A59048532A5F2E814 /* Pods-ChatBotPlants.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ChatBotPlants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

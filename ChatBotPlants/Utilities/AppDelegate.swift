@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ApiAI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    let configuration: AIConfiguration = AIDefaultConfiguration()
+    configuration.clientAccessToken = "8132f402a0f640f1acbf245aea32ca35"
+    //you would find the client access token in settings section of your agent at Dialogflow
+    let apiai = ApiAI.shared()
+    apiai?.configuration = configuration
+    UIApplication.shared.statusBarStyle = .lightContent
     return true
   }
 
